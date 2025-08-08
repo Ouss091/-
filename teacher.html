@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بيانات الأستاذ - منصة الأستاذ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>منصة الأستاذ بالأقسام الخاصة</h1>
+        <nav>
+            <a href="index.html">تسجيل الدخول</a>
+            <a href="teacher.html" class="active">بيانات الأستاذ</a>
+            <a href="students.html">قائمة التلاميذ</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="teacher-info">
+            <h2>معلومات الأستاذ</h2>
+            <form action="students.html" method="get">
+                <label>الاسم</label>
+                <input type="text" name="first_name" required>
+
+                <label>اللقب</label>
+                <input type="text" name="last_name" required>
+
+                <label>التخصص</label>
+                <input type="text" name="speciality" required>
+
+                <label>المدرسة</label>
+                <input type="text" name="school" required>
+
+                <button type="submit">حفظ ومتابعة</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - وزارة التضامن الوطني والأسرة وقضايا المرأة</p>
+    </footer>
+</body>
+</html>
