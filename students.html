@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة التلاميذ - منصة الأستاذ</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>منصة الأستاذ بالأقسام الخاصة</h1>
+        <nav>
+            <a href="index.html">تسجيل الدخول</a>
+            <a href="teacher.html">بيانات الأستاذ</a>
+            <a href="students.html" class="active">قائمة التلاميذ</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="student-form">
+            <h2>إضافة تلميذ</h2>
+            <form id="studentForm">
+                <label>اسم التلميذ</label>
+                <input type="text" id="studentName" required>
+
+                <label>اسم الولي</label>
+                <input type="text" id="guardianName" required>
+
+                <label>عنوان</label>
+                <input type="text" id="address" required>
+
+                <label>مكان الازدياد</label>
+                <input type="text" id="birthPlace" required>
+
+                <label>نوع التوحد / المرض</label>
+                <input type="text" id="condition" required>
+
+                <label>العمر</label>
+                <input type="number" id="age" required>
+
+                <label>صورة</label>
+                <input type="file" id="photo">
+
+                <button type="submit">إضافة</button>
+            </form>
+        </section>
+
+        <section class="student-list">
+            <h2>قائمة التلاميذ</h2>
+            <table id="studentsTable">
+                <thead>
+                    <tr>
+                        <th>اسم التلميذ</th>
+                        <th>اسم الولي</th>
+                        <th>العنوان</th>
+                        <th>مكان الازدياد</th>
+                        <th>المرض</th>
+                        <th>العمر</th>
+                        <th>صورة</th>
+                        <th>إجراءات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- يتم ملء القائمة من خلال JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - وزارة التضامن الوطني والأسرة وقضايا المرأة</p>
+    </footer>
+</body>
+</html>
